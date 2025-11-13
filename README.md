@@ -66,18 +66,18 @@ A TCP SYN scan was performed on the local subnet using:
     One open port detected: 1717/tcp  
     A service is listening on this port.
 
-6.1 Port Analysis
-    Common Services Running on Detected Ports
-    Port 53 (domain): Used for DNS resolution. The router provides DNS services to devices on the network.
-    Port 80 (http): Standard web service port. Usually hosts the router’s admin interface.
-    Port 5555 (filtered): Often used by remote management or debugging services. The firewall is blocking this port from being scanned.
-    Port 1717 (custom/unknown): Not a standard service port. Indicates an application or local service running on the device 192.168.1.7.
-    
-    Identifying Potential Security Risks
-    Port 53: DNS services can be abused for spoofing or poisoning if misconfigured, but risk is low on internal networks when properly secured.
-    Port 80: Exposes the router’s web interface. Weak or default credentials could allow full network compromise.
-    Port 5555: Although filtered, any remote management service behind this port could be risky if exposed or misconfigured.
-    Port 1717: Unknown open ports pose potential risks because the service running on them may be outdated, unnecessary, or vulnerable.
+            6.1 Port Analysis
+                Common Services Running on Detected Ports
+                Port 53 (domain): Used for DNS resolution. The router provides DNS services to devices on the network.
+                Port 80 (http): Standard web service port. Usually hosts the router’s admin interface.
+                Port 5555 (filtered): Often used by remote management or debugging services. The firewall is blocking this port from being scanned.
+                Port 1717 (custom/unknown): Not a standard service port. Indicates an application or local service running on the device 192.168.1.7.
+                
+                Identifying Potential Security Risks
+                Port 53: DNS services can be abused for spoofing or poisoning if misconfigured, but risk is low on internal networks when properly secured.
+                Port 80: Exposes the router’s web interface. Weak or default credentials could allow full network compromise.
+                Port 5555: Although filtered, any remote management service behind this port could be risky if exposed or misconfigured.
+                Port 1717: Unknown open ports pose potential risks because the service running on them may be outdated, unnecessary, or vulnerable.
 
 
 7. Files Included  
