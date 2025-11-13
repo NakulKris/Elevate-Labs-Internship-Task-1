@@ -1,0 +1,17 @@
+# Nmap 7.95 scan initiated Thu Nov 13 19:55:31 2025 as: /usr/lib/nmap/nmap --privileged -sS -oN task1.txt 192.168.1.0/24
+Nmap scan report for 192.168.1.1
+Host is up (0.0075s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE    SERVICE
+53/tcp   open     domain
+80/tcp   open     http
+5555/tcp filtered freeciv
+MAC Address: ************ (Genexis International)
+
+Nmap scan report for 192.168.1.7
+Host is up (0.0000020s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE SERVICE
+1717/tcp open  fj-hdnet
+
+# Nmap done at Thu Nov 13 19:55:38 2025 -- 256 IP addresses (2 hosts up) scanned in 7.42 seconds
